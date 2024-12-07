@@ -31,7 +31,7 @@ export default function Layout(
         <HeaderDesktop />
         <main
           id="main"
-          class="px-[70px] max-w-md mx-auto xl:max-w-screen-xl w-full pt-12 xl:pt-[20px] mt-[72px]"
+          class="px-[70px] mx-auto xl:max-w-screen-xl w-full pt-12 xl:pt-[20px] mt-[72px]"
         >
           <Partial key="main" name="main">
             <Component />

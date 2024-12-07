@@ -15,8 +15,9 @@ export const footerLinks: SimpleLink[] = [
 ];
 
 export const headerLinks: SimpleLink[] = [
-  { href: "/Bio", text: "Bio" },
-  { href: "/shows", text: "Shows" },
+  { href: "/bio", text: "Bio" },
+  { href: "/fashion", text: "Fashion" },
+  { href: "/theater", text: "Theater" },
 ];
 
 export interface Social {

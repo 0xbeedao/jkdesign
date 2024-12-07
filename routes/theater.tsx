@@ -8,7 +8,9 @@ export default function Theater({ url }: PageProps) {
     <>
       <Seo url={url.toString()} templateTitle="Theater" />
       <h1 class="text-2xl">Theatrical Shows</h1>
-      <TheatricalShowList productions={PRODUCTIONS} />
+      <div class="mt-4">
+        <TheatricalShowList productions={PRODUCTIONS} />
+      </div>
     </>
   );
 }
