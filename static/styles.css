@@ -1,3 +1,40 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.montserrat-normal {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.montserrat-bold {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.montserrat-italic {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: italic;
+}
+
+body {
+  @apply montserrat-normal;
+}
+
+i {
+  @apply montserrat-italic;
+}
+
+b {
+  @apply montserrat-bold;
+}
+
+.font-bold {
+  @apply montserrat-bold;
+}

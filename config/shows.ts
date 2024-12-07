@@ -8,7 +8,7 @@ export interface Show {
 
 export const SHOWS: Show[] = [
   {
-    "show": "This is the message Pride show",
+    "show": "This Is The Message Pride Show",
     "venue": "Portland Waterfront",
     "location": "Portland OR",
     "date": "2022-06",
@@ -42,7 +42,7 @@ export const SHOWS: Show[] = [
     "venue": "Velvet Rope",
     "location": "Portland OR",
     "date": "2007-04",
-    "notes": "competition winner",
+    "notes": "Competition winner!",
   },
   {
     "show": "Rhythm and Form Dance Event",
@@ -56,7 +56,7 @@ export const SHOWS: Show[] = [
     "venue": "Red Planet",
     "location": "Portland OR",
     "date": "2006-04",
-    "notes": "competition winner",
+    "notes": "Competition winner!",
   },
   {
     "show": "Fashion Show",

@@ -25,9 +25,16 @@ function slugifyShow(show: Show): string {
 export default function FashionShowList(
   { shows }: FashionShowListProps,
 ): JSX.Element {
+  const headerShow: Show = {
+    show: "Show",
+    venue: "Venue",
+    location: "Location",
+    date: "Date",
+  };
   return (
     <div class="flex flex-col space-y-4">
-      {shows.map((show) => <FashionShow key={slugifyShow(show)} {...show} />)}
+      <FashionShow isHeader show={headerShow} />
+      {shows.map((show) => <FashionShow key={slugifyShow(show)} show={show} />)}
     </div>
   );
 }

@@ -34,7 +34,7 @@ export const PRODUCTIONS: Production[] = [
   },
   {
     "show": "Mr Burns a Post Electric Play",
-    "theater": "Reed Theatre dept.",
+    "theater": "Reed College Theatre Department",
     "location": "Portland OR",
     "date": "2022-10",
   },
@@ -52,7 +52,7 @@ export const PRODUCTIONS: Production[] = [
   },
   {
     "show": "Comedy of Errors",
-    "theater": "Laughing stock Theatre",
+    "theater": "Laughing Stock Theatre",
     "location": "Sun Valley ID",
     "date": "2019-08",
   },
@@ -88,7 +88,7 @@ export const PRODUCTIONS: Production[] = [
   },
   {
     "show": "Three Sisters",
-    "theater": "NCTC",
+    "theater": "Northwest Classical Theatre Collaborative",
     "location": "Portland OR",
     "date": "2018-01",
   },
@@ -100,19 +100,19 @@ export const PRODUCTIONS: Production[] = [
   },
   {
     "show": "The Amish Project",
-    "theater": "PAC",
+    "theater": "Portland Actors Conservatory",
     "location": "Portland OR",
     "date": "2016-04",
   },
   {
     "show": "Sense and Sensibility",
-    "theater": "PAC",
+    "theater": "Portland Actors Conservatory",
     "location": "Portland OR",
     "date": "2016-02",
   },
   {
     "show": "Midsummer Night's Dream",
-    "theater": "PAC",
+    "theater": "Portland Actors Conservatory",
     "location": "Portland OR",
     "date": "2015-11",
   },
@@ -136,19 +136,19 @@ export const PRODUCTIONS: Production[] = [
   },
   {
     "show": "Really Really",
-    "theater": "PAC",
+    "theater": "Portland Actors Conservatory",
     "location": "Portland OR",
     "date": "2015-04",
   },
   {
     "show": "Romeo and Juliet",
-    "theater": "PAC",
+    "theater": "Portland Actors Conservatory",
     "location": "Portland OR",
     "date": "2015-02",
   },
   {
     "show": "6 Characters",
-    "theater": "PAC",
+    "theater": "Portland Actors Conservatory",
     "location": "Portland OR",
     "date": "2014-11",
   },
@@ -160,13 +160,13 @@ export const PRODUCTIONS: Production[] = [
   },
   {
     "show": "A Midsummer Night's Dream",
-    "theater": "PSU Music Department",
+    "theater": "Portland State University Music Department",
     "location": "Portland OR",
     "date": "2014-04",
   },
   {
-    "show": "Opus 3: after Strindberg",
-    "theater": "PAC",
+    "show": "Opus 3: After Strindberg",
+    "theater": "Portland Actors Conservatory",
     "location": "Portland OR",
     "date": "2014-04",
   },
@@ -178,7 +178,7 @@ export const PRODUCTIONS: Production[] = [
   },
   {
     "show": "The Glass Menagerie",
-    "theater": "PAC",
+    "theater": "Portland Actors Conservatory",
     "location": "Portland OR",
     "date": "2014-02",
   },
@@ -190,7 +190,7 @@ export const PRODUCTIONS: Production[] = [
   },
   {
     "show": "Dog See God",
-    "theater": "PAC",
+    "theater": "Portland Actors Conservatory",
     "location": "Portland OR",
     "date": "2013-11",
   },
@@ -220,7 +220,7 @@ export const PRODUCTIONS: Production[] = [
   },
   {
     "show": "Suburbia",
-    "theater": "PAC",
+    "theater": "Portland Actors Conservatory",
     "location": "Portland OR",
     "date": "2013-04",
   },
@@ -232,7 +232,7 @@ export const PRODUCTIONS: Production[] = [
   },
   {
     "show": "Rosencrantz and Guildenstern Are Dead",
-    "theater": "PAC",
+    "theater": "Portland Actors Conservatory",
     "location": "Portland OR",
     "date": "2013-02",
   },
@@ -244,7 +244,7 @@ export const PRODUCTIONS: Production[] = [
   },
   {
     "show": "A Bright Room Called Day",
-    "theater": "PAC",
+    "theater": "Portland Actors Conservatory",
     "location": "Portland OR",
     "date": "2012-11",
   },
@@ -274,7 +274,7 @@ export const PRODUCTIONS: Production[] = [
   },
   {
     "show": "Holy Ghost",
-    "theater": "PAC",
+    "theater": "Portland Actors Conservatory",
     "location": "Portland OR",
     "date": "2012-04",
   },
@@ -286,7 +286,7 @@ export const PRODUCTIONS: Production[] = [
   },
   {
     "show": "Twelfth Night",
-    "theater": "PAC",
+    "theater": "Portland Actors Conservatory",
     "location": "Portland OR",
     "date": "2012-02",
   },

@@ -27,7 +27,21 @@ export default function Layout(
 ): JSX.Element {
   return (
     <>
-      <div class="layout w-full" id="full">
+      <Head>
+        <link rel="preconnect" href="https://fonts.googleapis.com"></link>
+        <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin="anonymous"
+        >
+        </link>
+        <link
+          href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+          rel="stylesheet"
+        >
+        </link>
+      </Head>
+      <div class="layout w-full bg-gray-100 dark:bg-gray-900" id="full">
         <HeaderDesktop />
         <main
           id="main"

@@ -32,5 +32,3 @@ jobs:
           project: "jkdesign"
           entrypoint: "main.ts"
           root: "."
-          
-          

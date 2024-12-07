@@ -2,7 +2,7 @@ import { Head } from "$fresh/runtime.ts";
 
 const defaultMeta = {
   title: "Jessica Kroeze Design",
-  site_name: "JKDesign",
+  site_name: "Jessica Design",
   description: "Personal Website Portfolio of Jessica Kroeze",
   url: "https://jessicadesign.art",
   image: "https://jessicadesign.art/favicon/large.png",

@@ -25,10 +25,20 @@ function slugifyProduction(production: Production): string {
 export default function TheatricalShowList(
   { productions }: TheatricalShowListProps,
 ): JSX.Element {
+  const headerProduction: Production = {
+    show: "Show",
+    theater: "Theater",
+    location: "Location",
+    date: "Date",
+  };
   return (
     <div class="flex flex-col space-y-4">
+      <TheatricalShow isHeader production={headerProduction} />
       {productions.map((production) => (
-        <TheatricalShow key={slugifyProduction(production)} {...production} />
+        <TheatricalShow
+          key={slugifyProduction(production)}
+          production={production}
+        />
       ))}
     </div>
   );
