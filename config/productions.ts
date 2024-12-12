@@ -40,7 +40,7 @@ export const PRODUCTIONS: Production[] = [
   },
   {
     "show": "A Midsummer's Night Dream",
-    "theater": "Laughing stock Theatre",
+    "theater": "Laughingstock Theatre",
     "location": "Sun Valley ID",
     "date": "2022-08",
   },
@@ -70,7 +70,7 @@ export const PRODUCTIONS: Production[] = [
   },
   {
     "show": "Shrew",
-    "theater": "Laughing stock Theatre",
+    "theater": "Laughingstock Theatre",
     "location": "Sun Valley ID",
     "date": "2018-08",
   },

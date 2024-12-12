@@ -14,7 +14,7 @@ export default function FashionShow(
   return (
     <div
       class={classNames("grid grid-cols-1 gap-2 md:grid-cols-5", {
-        "text-xl font-bold": isHeader,
+        "text-xl font-bold hidden md:grid": isHeader,
         "text-lg": !isHeader,
       })}
     >
