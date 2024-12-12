@@ -9,7 +9,7 @@ export interface Show {
 export const SHOWS: Show[] = [
   {
     "show": "This Is The Message Pride Show",
-    "venue": "Portland Waterfront",
+    "venue": "AFRU Gallery",
     "location": "Portland OR",
     "date": "2022-06",
   },
