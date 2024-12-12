@@ -13,6 +13,7 @@ import * as $greet_name_ from "./routes/greet/[name].tsx";
 import * as $index from "./routes/index.tsx";
 import * as $theater from "./routes/theater.tsx";
 import * as $Counter from "./islands/Counter.tsx";
+import * as $LoadAwareImage from "./islands/LoadAwareImage.tsx";
 import type { Manifest } from "$fresh/server.ts";
 
 const manifest = {
@@ -30,6 +31,7 @@ const manifest = {
   },
   islands: {
     "./islands/Counter.tsx": $Counter,
+    "./islands/LoadAwareImage.tsx": $LoadAwareImage,
   },
   baseUrl: import.meta.url,
 } satisfies Manifest;
