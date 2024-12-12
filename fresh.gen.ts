@@ -11,6 +11,7 @@ import * as $bio from "./routes/bio.tsx";
 import * as $fashion from "./routes/fashion.tsx";
 import * as $greet_name_ from "./routes/greet/[name].tsx";
 import * as $index from "./routes/index.tsx";
+import * as $productions_alebrijes from "./routes/productions/alebrijes.tsx";
 import * as $theater from "./routes/theater.tsx";
 import * as $Counter from "./islands/Counter.tsx";
 import * as $LoadAwareImage from "./islands/LoadAwareImage.tsx";
@@ -27,6 +28,7 @@ const manifest = {
     "./routes/fashion.tsx": $fashion,
     "./routes/greet/[name].tsx": $greet_name_,
     "./routes/index.tsx": $index,
+    "./routes/productions/alebrijes.tsx": $productions_alebrijes,
     "./routes/theater.tsx": $theater,
   },
   islands: {

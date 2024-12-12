@@ -1,4 +1,5 @@
 import classNames from "@classnames";
+import UnstyledLink from "@components/links/UnstyledLink.tsx";
 import { formatDate } from "@components/util/dates.ts";
 import type { Production } from "@config/productions.ts";
 import type { JSX } from "preact/jsx-runtime";
@@ -17,7 +18,18 @@ export default function TheatricalShow(
         "text-lg": !isHeader,
       })}
     >
-      <h2 class="text-xl font-bold min-w-[10ch]">{production.show}</h2>
+      <h2 class="text-xl font-bold min-w-[10ch]">
+        {production.link
+          ? (
+            <UnstyledLink
+              className="underline"
+              href={production.link}
+            >
+              {production.show}
+            </UnstyledLink>
+          )
+          : production.show}
+      </h2>
       <p class="min-w-[7ch]">{production.theater}</p>
       <p class="min-w-[7ch]">{production.location}</p>
       <p class="min-w-[7ch]">

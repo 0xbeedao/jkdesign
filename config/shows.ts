@@ -14,10 +14,11 @@ export const SHOWS: Show[] = [
     "date": "2022-06",
   },
   {
-    "show": "Social Season Supply Fashion Show",
+    "show": "Social Season Supply",
     "venue": "Viscount Studio",
     "location": "Portland OR",
     "date": "2009-04",
+    "notes": "Fashion show",
   },
   {
     "show": "Little Black Dress",
@@ -49,7 +50,7 @@ export const SHOWS: Show[] = [
     "venue": "Crystal Ballroom",
     "location": "Portland OR",
     "date": "2006-06",
-    "notes": "fashion show",
+    "notes": "Fashion show",
   },
   {
     "show": "Red Dress",
@@ -59,8 +60,8 @@ export const SHOWS: Show[] = [
     "notes": "Competition winner!",
   },
   {
-    "show": "Fashion Show",
-    "venue": "KPSU Radio Event Benefit",
+    "show": "KPSU Benefit",
+    "venue": "KPSU Radio",
     "location": "Portland OR",
     "date": "1999-04",
   },

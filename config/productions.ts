@@ -5,6 +5,7 @@ export interface Production {
   date: string;
   corrected?: boolean;
   notes?: string;
+  link?: string;
 }
 
 export const PRODUCTIONS: Production[] = [
@@ -67,6 +68,7 @@ export const PRODUCTIONS: Production[] = [
     "theater": "Milagro Theatre",
     "location": "Portland OR",
     "date": "2018-10",
+    "link": "/productions/alebrijes",
   },
   {
     "show": "Shrew",
@@ -211,6 +213,12 @@ export const PRODUCTIONS: Production[] = [
     "theater": "Portland Shakespeare Project",
     "location": "Portland OR",
     "date": "2013-07",
+  },
+  {
+    "show": "La Rondine",
+    "theater": "Portland State University Music Department",
+    "location": "Portland OR",
+    "date": "2013-05",
   },
   {
     "show": "Winter's Tale",
