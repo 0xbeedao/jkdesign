@@ -26,6 +26,7 @@ export const PRODUCTIONS: Production[] = [
     "theater": "Fuse Theatre Ensemble",
     "location": "Portland OR",
     "date": "2024-04",
+    "link": "/productions/play-about-my-father",
   },
   {
     "show": "Happy Days",
