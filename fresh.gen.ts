@@ -12,7 +12,9 @@ import * as $fashion from "./routes/fashion.tsx";
 import * as $greet_name_ from "./routes/greet/[name].tsx";
 import * as $index from "./routes/index.tsx";
 import * as $productions_alebrijes from "./routes/productions/alebrijes.tsx";
+import * as $productions_blond_on_a_bum_trip from "./routes/productions/blond-on-a-bum-trip.tsx";
 import * as $productions_happy_days from "./routes/productions/happy-days.tsx";
+import * as $productions_mr_burns_a_post_electric_play from "./routes/productions/mr-burns-a-post-electric-play.tsx";
 import * as $productions_play_about_my_father from "./routes/productions/play-about-my-father.tsx";
 import * as $theater from "./routes/theater.tsx";
 import * as $Counter from "./islands/Counter.tsx";
@@ -31,7 +33,11 @@ const manifest = {
     "./routes/greet/[name].tsx": $greet_name_,
     "./routes/index.tsx": $index,
     "./routes/productions/alebrijes.tsx": $productions_alebrijes,
+    "./routes/productions/blond-on-a-bum-trip.tsx":
+      $productions_blond_on_a_bum_trip,
     "./routes/productions/happy-days.tsx": $productions_happy_days,
+    "./routes/productions/mr-burns-a-post-electric-play.tsx":
+      $productions_mr_burns_a_post_electric_play,
     "./routes/productions/play-about-my-father.tsx":
       $productions_play_about_my_father,
     "./routes/theater.tsx": $theater,

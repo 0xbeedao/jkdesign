@@ -20,6 +20,7 @@ export const PRODUCTIONS: Production[] = [
     "theater": "Fuse Theatre Ensemble",
     "location": "Portland OR",
     "date": "2024-05",
+    "link": "/productions/blond-on-a-bum-trip",
   },
   {
     "show": "The Play About My Father",
@@ -40,6 +41,7 @@ export const PRODUCTIONS: Production[] = [
     "theater": "Reed College Theatre Department",
     "location": "Portland OR",
     "date": "2022-10",
+    "link": "/productions/mr-burns-a-post-electric-play",
   },
   {
     "show": "A Midsummer's Night Dream",
