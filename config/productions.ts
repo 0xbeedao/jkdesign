@@ -33,6 +33,7 @@ export const PRODUCTIONS: Production[] = [
     "theater": "Northwest Classical Theatre Collaborative",
     "location": "Portland OR",
     "date": "2023-08",
+    "link": "/productions/happy-days",
   },
   {
     "show": "Mr Burns a Post Electric Play",
