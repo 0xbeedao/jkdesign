@@ -11,6 +11,7 @@ import * as $bio from "./routes/bio.tsx";
 import * as $fashion from "./routes/fashion.tsx";
 import * as $greet_name_ from "./routes/greet/[name].tsx";
 import * as $index from "./routes/index.tsx";
+import * as $productions_a_midsummer_nights_dream_2022 from "./routes/productions/a-midsummer-nights-dream-2022.tsx";
 import * as $productions_alebrijes from "./routes/productions/alebrijes.tsx";
 import * as $productions_blond_on_a_bum_trip from "./routes/productions/blond-on-a-bum-trip.tsx";
 import * as $productions_happy_days from "./routes/productions/happy-days.tsx";
@@ -32,6 +33,8 @@ const manifest = {
     "./routes/fashion.tsx": $fashion,
     "./routes/greet/[name].tsx": $greet_name_,
     "./routes/index.tsx": $index,
+    "./routes/productions/a-midsummer-nights-dream-2022.tsx":
+      $productions_a_midsummer_nights_dream_2022,
     "./routes/productions/alebrijes.tsx": $productions_alebrijes,
     "./routes/productions/blond-on-a-bum-trip.tsx":
       $productions_blond_on_a_bum_trip,

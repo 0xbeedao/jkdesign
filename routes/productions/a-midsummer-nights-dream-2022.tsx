@@ -16,20 +16,47 @@ export default function PlayPage({ url }: PageProps) {
         <br />
         Laughing Stock Theater, Sun Valley Idaho, 2022
       </p>
-      <p>
-        <UnstyledLink href="https://www.laughingstocktheater.com/">
-          Laughing Stock Theater
-        </UnstyledLink>
-      </p>
-      <div class="flex-row flex-wrap">
-        <LoadAwareImage
-          src="/images/pages/midsummer-thumbnail.jpg"
-          alt="Midsummer Night's Dream production photo"
-          title="A Midsummer Night's Dream"
-          height={450}
-          width={800}
-          className="my-3"
-        />
+      <div class="flex flex-row flex-wrap">
+        <div class="w-1/2">
+          <LoadAwareImage
+            src="/images/pages/midsummer-sv-1.jpg"
+            alt="Midsummer Night's Dream Production Photo"
+            title="A Midsummer Night's Dream"
+            height={1097}
+            width={800}
+            className="my-3"
+          />
+        </div>
+        <div>
+          <LoadAwareImage
+            src="/images/pages/midsummer-sv-2.jpg"
+            alt="Midsummer Night's Dream Production Photo"
+            title="A Midsummer Night's Dream"
+            height={539}
+            width={800}
+            className="my-3"
+          />
+        </div>
+        <div>
+          <LoadAwareImage
+            src="/images/pages/midsummer-sv-3.jpg"
+            alt="Midsummer Night's Dream Production Photo"
+            title="A Midsummer Night's Dream"
+            height={560}
+            width={800}
+            className="my-3"
+          />
+        </div>
+        <div>
+          <LoadAwareImage
+            src="/images/pages/midsummer-sv-4.jpg"
+            alt="Midsummer Night's Dream Production Photo"
+            title="A Midsummer Night's Dream"
+            height={602}
+            width={800}
+            className="my-3"
+          />
+        </div>
       </div>
       <h2 class="text-2xl my-3">
         Reviews
@@ -44,7 +71,15 @@ export default function PlayPage({ url }: PageProps) {
           </UnstyledLink>, Eye on Sun Valley
           <br />
           <p class="italic pl-5 my-3">
-            &ldquo;The park will turn into a fairy kingdom where pandemonium ensues when human lovers flee to the woods. Where young lovers eventually experience the transformative power of love as they allow it to grow beyond puppy love to mature love.&rdquo;
+            &ldquo;The park will turn into a fairy kingdom where pandemonium
+            ensues when human lovers flee to the woods. Where young lovers
+            eventually experience the transformative power of love as they allow
+            it to grow beyond puppy love to mature love.&rdquo;
+          </p>
+          <p class="italic pl-5 my-3 text-[#2596be] dark:text-orange-300">
+            &ldquo;Costume designer Jessica Bobillot Kroeze is decking actors
+            out in a Tudor-Elizabethan wardrobe. She was inspired by the local
+            nature to create the costumes for the fairies.&rdquo;
           </p>
         </li>
         <li class="my-3">
@@ -56,7 +91,8 @@ export default function PlayPage({ url }: PageProps) {
           </UnstyledLink>, Boise State Public Radio
           <br />
           <p class="italic pl-5 my-3">
-            &ldquo;I felt like, you know what? I don't want it to fizzle out from that virus, so let's go big and bring it back.&rdquo;
+            &ldquo;I felt like, you know what? I don't want it to fizzle out
+            from that virus, so let's go big and bring it back.&rdquo;
           </p>
         </li>
       </ul>

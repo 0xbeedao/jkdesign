@@ -48,6 +48,7 @@ export const PRODUCTIONS: Production[] = [
     "theater": "Laughingstock Theatre",
     "location": "Sun Valley ID",
     "date": "2022-08",
+    "link": "/productions/a-midsummer-nights-dream-2022",
   },
   {
     "show": "A Christmas Carol",
