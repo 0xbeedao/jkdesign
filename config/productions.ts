@@ -80,6 +80,7 @@ export const PRODUCTIONS: Production[] = [
     "theater": "Laughingstock Theatre",
     "location": "Sun Valley ID",
     "date": "2018-08",
+    "link": "/productions/shrew-sunvalley",
   },
   {
     "show": "Cabaret",

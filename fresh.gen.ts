@@ -17,6 +17,7 @@ import * as $productions_blond_on_a_bum_trip from "./routes/productions/blond-on
 import * as $productions_happy_days from "./routes/productions/happy-days.tsx";
 import * as $productions_mr_burns_a_post_electric_play from "./routes/productions/mr-burns-a-post-electric-play.tsx";
 import * as $productions_play_about_my_father from "./routes/productions/play-about-my-father.tsx";
+import * as $productions_shrew_sunvalley from "./routes/productions/shrew-sunvalley.tsx";
 import * as $theater from "./routes/theater.tsx";
 import * as $Counter from "./islands/Counter.tsx";
 import * as $LoadAwareImage from "./islands/LoadAwareImage.tsx";
@@ -43,6 +44,7 @@ const manifest = {
       $productions_mr_burns_a_post_electric_play,
     "./routes/productions/play-about-my-father.tsx":
       $productions_play_about_my_father,
+    "./routes/productions/shrew-sunvalley.tsx": $productions_shrew_sunvalley,
     "./routes/theater.tsx": $theater,
   },
   islands: {
