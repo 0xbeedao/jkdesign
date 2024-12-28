@@ -14,6 +14,7 @@ export const PRODUCTIONS: Production[] = [
     "theater": "Northwest Classical Theatre Collaborative",
     "location": "Portland OR",
     "date": "2024-10",
+    "link": "/productions/year-of-magical-thinking",
   },
   {
     "show": "Blond on a Bum Trip",
