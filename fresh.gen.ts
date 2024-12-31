@@ -16,6 +16,7 @@ import * as $productions_alebrijes from "./routes/productions/alebrijes.tsx";
 import * as $productions_blond_on_a_bum_trip from "./routes/productions/blond-on-a-bum-trip.tsx";
 import * as $productions_happy_days from "./routes/productions/happy-days.tsx";
 import * as $productions_mr_burns_a_post_electric_play from "./routes/productions/mr-burns-a-post-electric-play.tsx";
+import * as $productions_or from "./routes/productions/or.tsx";
 import * as $productions_play_about_my_father from "./routes/productions/play-about-my-father.tsx";
 import * as $productions_shrew_sunvalley from "./routes/productions/shrew-sunvalley.tsx";
 import * as $productions_year_of_magical_thinking from "./routes/productions/year-of-magical-thinking.tsx";
@@ -43,6 +44,7 @@ const manifest = {
     "./routes/productions/happy-days.tsx": $productions_happy_days,
     "./routes/productions/mr-burns-a-post-electric-play.tsx":
       $productions_mr_burns_a_post_electric_play,
+    "./routes/productions/or.tsx": $productions_or,
     "./routes/productions/play-about-my-father.tsx":
       $productions_play_about_my_father,
     "./routes/productions/shrew-sunvalley.tsx": $productions_shrew_sunvalley,

@@ -1,9 +1,19 @@
 import UnstyledLink from "@components/links/UnstyledLink.tsx";
 import Seo from "@components/Seo.tsx";
-import LoadAwareImage from "@islands/LoadAwareImage.tsx";
+import ImageList from "@components/shows/ImageList.tsx";
 import type { PageProps } from "$fresh/server.ts";
 
 export default function PlayPage({ url }: PageProps) {
+  const images = [
+    {
+      src: "/images/pages/blond-on-a-bum-trip-thumbnail.jpg",
+      alt: "Blond on a Bum Trip production photo",
+      title: "Blond on a Bum Trip",
+      height: 686,
+      width: 800,
+    },
+  ];
+
   return (
     <>
       <Seo
@@ -22,16 +32,7 @@ export default function PlayPage({ url }: PageProps) {
           Fuse Theatre Ensemble
         </UnstyledLink>, Portland, Oregon, May 2024
       </p>
-      <div class="flex-row flex-wrap">
-        <LoadAwareImage
-          src="/images/pages/blond-on-a-bum-trip-thumbnail.jpg"
-          alt="Blond on a Bum Trip production photo"
-          title="Blond on a Bum Trip"
-          height={686}
-          width={800}
-          className="my-3"
-        />
-      </div>
+      <ImageList images={images} imageClassName="my-3" />
       <h2 class="text-2xl my-3">
         Reviews
       </h2>

@@ -26,10 +26,34 @@ Images:
 
 import UnstyledLink from "@components/links/UnstyledLink.tsx";
 import Seo from "@components/Seo.tsx";
-import LoadAwareImage from "@islands/LoadAwareImage.tsx";
+import ImageList from "@components/shows/ImageList.tsx";
 import type { PageProps } from "$fresh/server.ts";
 
 export default function PlayPage({ url }: PageProps) {
+  const images = [
+    {
+      src: "/images/pages/magical-thinking-3-24.jpg",
+      alt: "The Year of Magical Thinking Production Photo",
+      title: "The Year of Magical Thinking",
+      height: 1025,
+      width: 800,
+    },
+    {
+      src: "/images/pages/magical-thinking-2-24.jpg",
+      alt: "The Year of Magical Thinking Production Photo",
+      title: "The Year of Magical Thinking",
+      height: 953,
+      width: 800,
+    },
+    {
+      src: "/images/pages/magical-thinking-1-24.jpg",
+      alt: "The Year of Magical Thinking Production Photo",
+      title: "The Year of Magical Thinking",
+      height: 1067,
+      width: 800,
+    },
+  ];
+
   return (
     <>
       <Seo
@@ -48,38 +72,7 @@ export default function PlayPage({ url }: PageProps) {
       <p class="mt-3">
         Directed by: Patrick Walsh
       </p>
-      <div class="flex flex-row flex-wrap">
-        <div>
-          <LoadAwareImage
-            src="/images/pages/magical-thinking-3-24.jpg"
-            alt="The Year of Magical Thinking Production Photo"
-            title="The Year of Magical Thinking"
-            height={1025}
-            width={800}
-            className="my-3"
-          />
-        </div>
-        <div>
-          <LoadAwareImage
-            src="/images/pages/magical-thinking-2-24.jpg"
-            alt="The Year of Magical Thinking Production Photo"
-            title="The Year of Magical Thinking"
-            height={953}
-            width={800}
-            className="my-3"
-          />
-        </div>
-        <div>
-          <LoadAwareImage
-            src="/images/pages/magical-thinking-1-24.jpg"
-            alt="The Year of Magical Thinking Production Photo"
-            title="The Year of Magical Thinking"
-            height={1067}
-            width={800}
-            className="my-3"
-          />
-        </div>
-      </div>
+      <ImageList images={images} imageClassName="my-3" />
       <h2 class="text-2xl my-3">
         Links
       </h2>

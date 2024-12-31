@@ -1,9 +1,26 @@
 import UnstyledLink from "@components/links/UnstyledLink.tsx";
 import Seo from "@components/Seo.tsx";
-import LoadAwareImage from "@islands/LoadAwareImage.tsx";
+import ImageList from "@components/shows/ImageList.tsx";
 import type { PageProps } from "$fresh/server.ts";
 
 export default function PlayPage({ url }: PageProps) {
+  const images = [
+    {
+      src: "/images/pages/mr-burns-web-1283.jpg",
+      alt: "Mr Burns production photo",
+      title: "Mr Burns, a Post Electric Play",
+      height: 534,
+      width: 800,
+    },
+    {
+      src: "/images/pages/mr-burns-web-5024.jpg",
+      alt: "Mr Burns production photo 2",
+      title: "Mr Burns, a Post Electric Play",
+      height: 534,
+      width: 800,
+    },
+  ];
+
   return (
     <>
       <Seo
@@ -29,24 +46,7 @@ export default function PlayPage({ url }: PageProps) {
         </UnstyledLink>, Diver Studio Theatre, Portland, Oregon, November 11-19,
         2022
       </p>
-      <div class="flex-row flex-wrap">
-        <LoadAwareImage
-          src="/images/pages/mr-burns-web-1283.jpg"
-          alt="Mr Burns production photo"
-          title="Mr Burns, a Post Electric Play"
-          height={534}
-          width={800}
-          className="my-3"
-        />
-        <LoadAwareImage
-          src="/images/pages/mr-burns-web-5024.jpg"
-          alt="Mr Burns production photo 2"
-          title="Mr Burns, a Post Electric Play"
-          height={534}
-          width={800}
-          className="my-3"
-        />
-      </div>
+      <ImageList images={images} imageClassName="my-3" />
     </>
   );
 }

@@ -1,9 +1,48 @@
 import UnstyledLink from "@components/links/UnstyledLink.tsx";
 import Seo from "@components/Seo.tsx";
-import LoadAwareImage from "@islands/LoadAwareImage.tsx";
+import ImageList from "@components/shows/ImageList.tsx";
 import type { PageProps } from "$fresh/server.ts";
 
 export default function PlayPage({ url }: PageProps) {
+  const images = [
+    {
+      src: "/images/pages/shrew-sv-3.jpg",
+      title: "SHREW!",
+      height: 760,
+      width: 800,
+    },
+    {
+      src: "/images/pages/shrew-sv-1.jpg",
+      title: "SHREW!",
+      height: 612,
+      width: 800,
+    },
+    {
+      src: "/images/pages/shrew-sv-2.jpg",
+      title: "SHREW!",
+      height: 1100,
+      width: 800,
+    },
+    {
+      src: "/images/pages/shrew-sv-4.jpg",
+      title: "SHREW!",
+      height: 582,
+      width: 800,
+    },
+    {
+      src: "/images/pages/shrew-sv-5.jpg",
+      title: "SHREW!",
+      height: 696,
+      width: 800,
+    },
+    {
+      src: "/images/pages/shrew-sv-6.jpg",
+      title: "SHREW!",
+      height: 1154,
+      width: 800,
+    },
+  ];
+
   return (
     <>
       <Seo
@@ -16,69 +55,10 @@ export default function PlayPage({ url }: PageProps) {
         <br />
         Laughing Stock Theater, Sun Valley Idaho, 2018
       </p>
-      <div class="flex flex-row flex-wrap">
-      <div>
-          <LoadAwareImage
-            src="/images/pages/shrew-sv-3.jpg"
-            alt="SHREW! Production Photo"
-            title="SHREW!"
-            height={760}
-            width={800}
-            className="my-3"
-          />
-        </div>
-        <div>
-          <LoadAwareImage
-            src="/images/pages/shrew-sv-1.jpg"
-            alt="SHREW! Production Photo"
-            title="SHREW!"
-            height={612}
-            width={800}
-            className="my-3"
-          />
-        </div>
-        <div>
-          <LoadAwareImage
-            src="/images/pages/shrew-sv-2.jpg"
-            alt="SHREW! Production Photo"
-            title="SHREW!"
-            height={1100}
-            width={800}
-            className="my-3"
-          />
-        </div>
-        
-        <div>
-          <LoadAwareImage
-            src="/images/pages/shrew-sv-4.jpg"
-            alt="SHREW! Production Photo"
-            title="SHREW!"
-            height={582}
-            width={800}
-            className="my-3"
-          />
-        </div>
-        <div>
-          <LoadAwareImage
-            src="/images/pages/shrew-sv-5.jpg"
-            alt="SHREW! Production Photo"
-            title="SHREW!"
-            height={696}
-            width={800}
-            className="my-3"
-          />
-        </div>
-        <div>
-          <LoadAwareImage
-            src="/images/pages/shrew-sv-6.jpg"
-            alt="SHREW! Production Photo"
-            title="SHREW!"
-            height={1154}
-            width={800}
-            className="my-3"
-          />
-        </div>
-      </div>
+      <ImageList
+        images={images}
+        imageClassName="my-3"
+      />
       <h2 class="text-2xl my-3">
         Reviews
       </h2>

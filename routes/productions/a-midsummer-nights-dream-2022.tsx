@@ -1,9 +1,40 @@
 import UnstyledLink from "@components/links/UnstyledLink.tsx";
 import Seo from "@components/Seo.tsx";
-import LoadAwareImage from "@islands/LoadAwareImage.tsx";
+import ImageList from "@components/shows/ImageList.tsx";
 import type { PageProps } from "$fresh/server.ts";
 
 export default function PlayPage({ url }: PageProps) {
+  const images = [
+    {
+      src: "/images/pages/midsummer-sv-1.jpg",
+      alt: "Midsummer Night's Dream Production Photo",
+      title: "A Midsummer Night's Dream",
+      height: 1097,
+      width: 800,
+    },
+    {
+      src: "/images/pages/midsummer-sv-2.jpg",
+      alt: "Midsummer Night's Dream Production Photo",
+      title: "A Midsummer Night's Dream",
+      height: 539,
+      width: 800,
+    },
+    {
+      src: "/images/pages/midsummer-sv-3.jpg",
+      alt: "Midsummer Night's Dream Production Photo",
+      title: "A Midsummer Night's Dream",
+      height: 560,
+      width: 800,
+    },
+    {
+      src: "/images/pages/midsummer-sv-4.jpg",
+      alt: "Midsummer Night's Dream Production Photo",
+      title: "A Midsummer Night's Dream",
+      height: 602,
+      width: 800,
+    },
+  ];
+
   return (
     <>
       <Seo
@@ -16,48 +47,7 @@ export default function PlayPage({ url }: PageProps) {
         <br />
         Laughing Stock Theater, Sun Valley Idaho, 2022
       </p>
-      <div class="flex flex-row flex-wrap">
-        <div class="w-1/2">
-          <LoadAwareImage
-            src="/images/pages/midsummer-sv-1.jpg"
-            alt="Midsummer Night's Dream Production Photo"
-            title="A Midsummer Night's Dream"
-            height={1097}
-            width={800}
-            className="my-3"
-          />
-        </div>
-        <div>
-          <LoadAwareImage
-            src="/images/pages/midsummer-sv-2.jpg"
-            alt="Midsummer Night's Dream Production Photo"
-            title="A Midsummer Night's Dream"
-            height={539}
-            width={800}
-            className="my-3"
-          />
-        </div>
-        <div>
-          <LoadAwareImage
-            src="/images/pages/midsummer-sv-3.jpg"
-            alt="Midsummer Night's Dream Production Photo"
-            title="A Midsummer Night's Dream"
-            height={560}
-            width={800}
-            className="my-3"
-          />
-        </div>
-        <div>
-          <LoadAwareImage
-            src="/images/pages/midsummer-sv-4.jpg"
-            alt="Midsummer Night's Dream Production Photo"
-            title="A Midsummer Night's Dream"
-            height={602}
-            width={800}
-            className="my-3"
-          />
-        </div>
-      </div>
+      <ImageList images={images} imageClassName="my-3" />
       <h2 class="text-2xl my-3">
         Reviews
       </h2>
