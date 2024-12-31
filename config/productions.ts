@@ -126,10 +126,11 @@ export const PRODUCTIONS: Production[] = [
     "date": "2015-11",
   },
   {
-    "show": "OR",
+    "show": "OR,",
     "theater": "Third Rail Repertory Theater",
     "location": "Portland OR",
     "date": "2015-09",
+    "link": "/productions/or",
   },
   {
     "show": "Waiting For Godot",

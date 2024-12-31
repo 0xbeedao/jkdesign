@@ -8,69 +8,103 @@
  * Director: Philip Cuomo
  * Writer: Liz Duffy Adams
  *
- * Images: use all images in /static/images/productions/ starting with "or-"
+ * Summary to reword:
+ * Set over the course of a single evening, Aphra Behn–poet, actress, spy, and one of the first professional female playwrights of the Restoration–has the opportunity to land her first commission for a professional company if she can deliver her play by dawn. Complicating this task are an array of lovers and rivals, from a rogue-spy to a blossoming ingenue to the king himself, vying for her time and affections. With echoes of Restoration comedy, quick-change farce, a dash or two of Tom Stoppard, and the sexual revolution of the 1960’s, Or, is a little valentine to love in the theatre.
+ *
+ * Images: use all images in /static/images/pages/ starting with "or-"
+ * and credit the photographer Owen Carey in the alt text.
+ * This is the sizing for the images, as given by imagemagick identify:
+ * or-show-1.jpg JPEG 800x1199 800x1199+0+0 8-bit sRGB 76029B 0.000u 0:00.000
+ * or-show-2.jpg JPEG 800x1199 800x1199+0+0 8-bit sRGB 126138B 0.000u 0:00.000
+ * or-show-3.jpg JPEG 800x1199 800x1199+0+0 8-bit sRGB 121586B 0.000u 0:00.000
+ * or-show-4.jpg JPEG 800x1199 800x1199+0+0 8-bit sRGB 168265B 0.000u 0:00.000
+ * or-show-5.jpg JPEG 640x960 640x960+0+0 8-bit sRGB 73851B 0.000u 0:00.000
+ * or-show-6.jpg JPEG 800x800 800x800+0+0 8-bit sRGB 321399B 0.000u 0:00.000
  *
  * links:
+ * Theater link: https://thirdrailrep.org/mission-production-history/season-10/or/
+ *
+ * Reviews:
+ * - https://www.portlandmercury.com/Theater/2015/09/23/16545639/the-financial-lives-of-17th-century-poets-in-or
  *
  * If any link mentions the costuming, make a pull-quote from it.
  */
 
 import UnstyledLink from "@components/links/UnstyledLink.tsx";
 import Seo from "@components/Seo.tsx";
-import LoadAwareImage from "@islands/LoadAwareImage.tsx";
+import ImageList from "@components/shows/ImageList.tsx";
 import type { PageProps } from "$fresh/server.ts";
 
 export default function PlayPage({ url }: PageProps) {
+  const images = [
+    {
+      src: "/images/pages/or-show-1.jpg",
+      alt: "Or, production photo by Owen Carey",
+      title: "Or,",
+      height: 1199,
+      width: 800,
+    },
+    {
+      src: "/images/pages/or-show-2.jpg",
+      alt: "Or, production photo by Owen Carey",
+      title: "Or,",
+      height: 1199,
+      width: 800,
+    },
+    {
+      src: "/images/pages/or-show-3.jpg",
+      alt: "Or, production photo by Owen Carey",
+      title: "Or,",
+      height: 1199,
+      width: 800,
+    },
+    {
+      src: "/images/pages/or-show-4.jpg",
+      alt: "Or, production photo by Owen Carey",
+      title: "Or,",
+      height: 1199,
+      width: 800,
+    },
+    {
+      src: "/images/pages/or-show-5.jpg",
+      alt: "Or, production photo by Owen Carey",
+      title: "Or,",
+      height: 960,
+      width: 640,
+    },
+    {
+      src: "/images/pages/or-show-6.jpg",
+      alt: "Or, production photo",
+      title: "Or,",
+      height: 800,
+      width: 800,
+    },
+  ];
+
   return (
     <>
       <Seo
         url={url.toString()}
-        templateTitle="The Year of Magical Thinking"
+        templateTitle="Or,"
       />
-      <h1 class="text-2xl">The Year of Magical Thinking</h1>
+      <h1 class="text-2xl">Or,</h1>
       <p>
-        Based on the National Book Award winner and Pulitzer Prize finalist
-        memoir by Joan Didion, this play, adapted by the author herself,
-        recounts the year that both her husband and daughter died. Starring
-        powerhouse actress, Diane Kondrat, and featuring an original violin
-        score composed and performed by Michelle Alany, this story of unexpected
-        loss examines the power of grief and how we can heal from its effects.
+        Set during a single evening, Aphra Behn – poet, actress, spy, and one of
+        the first professional female playwrights of the Restoration – races
+        against dawn to complete her first commission for a professional
+        company. Her task is complicated by an array of characters competing for
+        her attention: a roguish spy, a young ingenue, and even the king
+        himself, all vying for her time and affections. This delightful comedy
+        blends elements of Restoration theatre, quick-change farce, and hints of
+        Tom Stoppard, while drawing parallels to the sexual revolution of the
+        1960s.
       </p>
       <p class="mt-3">
-        Directed by: Patrick Walsh
+        Directed by: Philip Cuomo
+        <br />
+        Written by: Liz Duffy Adams
       </p>
-      <div class="flex flex-row flex-wrap">
-        <div>
-          <LoadAwareImage
-            src="/images/pages/magical-thinking-3-24.jpg"
-            alt="The Year of Magical Thinking Production Photo"
-            title="The Year of Magical Thinking"
-            height={1025}
-            width={800}
-            className="my-3"
-          />
-        </div>
-        <div>
-          <LoadAwareImage
-            src="/images/pages/magical-thinking-2-24.jpg"
-            alt="The Year of Magical Thinking Production Photo"
-            title="The Year of Magical Thinking"
-            height={953}
-            width={800}
-            className="my-3"
-          />
-        </div>
-        <div>
-          <LoadAwareImage
-            src="/images/pages/magical-thinking-1-24.jpg"
-            alt="The Year of Magical Thinking Production Photo"
-            title="The Year of Magical Thinking"
-            height={1067}
-            width={800}
-            className="my-3"
-          />
-        </div>
-      </div>
+      <ImageList images={images} imageClassName="my-3" />
       <h2 class="text-2xl my-3">
         Links
       </h2>
@@ -78,18 +112,24 @@ export default function PlayPage({ url }: PageProps) {
         <li>
           <UnstyledLink
             className="underline"
-            href="https://www.gardenhomelibrary.org/events/cal/2024/9/11/northwest-classical-theater-collaborative-production-the-year-of-magical-thinking"
+            href="https://thirdrailrep.org/mission-production-history/season-10/or/"
           >
-            Northwest Classical Theater Collaborative Production
+            Third Rail Repertory Theatre Production
           </UnstyledLink>
         </li>
         <li>
           <UnstyledLink
             className="underline"
-            href="https://happeningnext.com/event/the-year-of-magical-thinking-a-play-eid3a0bu44udm"
+            href="https://www.portlandmercury.com/Theater/2015/09/23/16545639/the-financial-lives-of-17th-century-poets-in-or"
           >
-            The Year of Magical Thinking
+            Portland Mercury Review
           </UnstyledLink>
+          <p class="italic pl-5 my-3">
+            &ldquo;With its small but effective cast and fast-unfurling
+            dialogue, Or, is a spirited romp that also has a lot to say about
+            the complexity of sex, gender, and being one of the first woman
+            writers ever.&rdquo;
+          </p>
         </li>
       </ul>
     </>
