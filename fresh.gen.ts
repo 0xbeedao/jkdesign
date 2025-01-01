@@ -18,11 +18,13 @@ import * as $productions_happy_days from "./routes/productions/happy-days.tsx";
 import * as $productions_mr_burns_a_post_electric_play from "./routes/productions/mr-burns-a-post-electric-play.tsx";
 import * as $productions_or from "./routes/productions/or.tsx";
 import * as $productions_play_about_my_father from "./routes/productions/play-about-my-father.tsx";
+import * as $productions_sherlock_christmas_carol from "./routes/productions/sherlock-christmas-carol.tsx";
 import * as $productions_shrew_sunvalley from "./routes/productions/shrew-sunvalley.tsx";
 import * as $productions_year_of_magical_thinking from "./routes/productions/year-of-magical-thinking.tsx";
 import * as $theater from "./routes/theater.tsx";
 import * as $Counter from "./islands/Counter.tsx";
 import * as $LoadAwareImage from "./islands/LoadAwareImage.tsx";
+import * as $ReviewCarousel from "./islands/ReviewCarousel.tsx";
 import type { Manifest } from "$fresh/server.ts";
 
 const manifest = {
@@ -47,6 +49,8 @@ const manifest = {
     "./routes/productions/or.tsx": $productions_or,
     "./routes/productions/play-about-my-father.tsx":
       $productions_play_about_my_father,
+    "./routes/productions/sherlock-christmas-carol.tsx":
+      $productions_sherlock_christmas_carol,
     "./routes/productions/shrew-sunvalley.tsx": $productions_shrew_sunvalley,
     "./routes/productions/year-of-magical-thinking.tsx":
       $productions_year_of_magical_thinking,
@@ -55,6 +59,7 @@ const manifest = {
   islands: {
     "./islands/Counter.tsx": $Counter,
     "./islands/LoadAwareImage.tsx": $LoadAwareImage,
+    "./islands/ReviewCarousel.tsx": $ReviewCarousel,
   },
   baseUrl: import.meta.url,
 } satisfies Manifest;

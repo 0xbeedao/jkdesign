@@ -1,29 +1,3 @@
-/*
-Using the template below, update the page for the Year of Magical Thinking.
-
-Summary (reword): Based on the National Book Award winner and Pulitzer Prize finalist,
-memoir by Joan Didion. This play, adapted by the author herself,
-recounts the year that both her husband and daughter died.
-Starring powerhouse actress, Diane Kondrat, and featuring an original
-violin score composed and performed by Michelle Alany, this story of
-unexpected loss examines the power of grief and how we can heal
-from its effects.
-
-Directed by:  Patrick Walsh
-
-
-links:
-- https://www.gardenhomelibrary.org/events/cal/2024/9/11/northwest-classical-theater-collaborative-production-the-year-of-magical-thinking
-- https://happeningnext.com/event/the-year-of-magical-thinking-a-play-eid3a0bu44udm
-
-If any link mentions the costuming, make a pull-quote from it.
-
-Images:
-- static/images/pages/magical-thinking-1.jpg
-- static/images/pages/magical-thinking-2.jpg
-- static/images/pages/magical-thinking-3.jpg
-*/
-
 import UnstyledLink from "@components/links/UnstyledLink.tsx";
 import Seo from "@components/Seo.tsx";
 import ImageList from "@components/shows/ImageList.tsx";

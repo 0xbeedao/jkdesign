@@ -317,6 +317,7 @@ export const PRODUCTIONS: Production[] = [
     "theater": "Artists Repertory Theatre",
     "location": "Portland OR",
     "date": "2011-11",
+    "link": "/productions/sherlock-christmas-carol",
   },
   {
     "show": "No Man's Land",
