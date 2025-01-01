@@ -1,4 +1,5 @@
 import classNames from "@classnames";
+import { IS_BROWSER } from "$fresh/runtime.ts";
 import { JSX } from "preact";
 import { useState } from "preact/hooks";
 
@@ -36,6 +37,27 @@ export default function LoadAwareImage({
   );
   const safeClassName = (className ?? "") as string;
   const widthIsSet = safeClassName.includes("w-");
+
+  if (IS_BROWSER) {
+    return (
+      <figure
+        style={!widthIsSet ? { width: `${width}px` } : undefined}
+        class={className}
+      >
+        <img
+          class={classNames(
+            imgClassName,
+            { ["animate-pulse" + blurClassName]: status === "loading" },
+          )}
+          src={src}
+          width={width}
+          height={height}
+          alt={alt}
+          {...rest}
+        />
+      </figure>
+    );
+  }
 
   return (
     <figure

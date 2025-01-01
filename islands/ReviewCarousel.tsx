@@ -1,9 +1,19 @@
 import ReviewCard from "@components/reviews/ReviewCard.tsx";
 import { REVIEWS } from "@config/reviews.ts";
+import { IS_BROWSER } from "$fresh/runtime.ts";
 import { useEffect, useState } from "preact/hooks";
 
 export default function ReviewCarousel() {
-  const [currentIndex, setCurrentIndex] = useState(0);
+  if (!IS_BROWSER) {
+    return (
+      <div class="flex items-center justify-center w-full">
+        <div>Loading...</div>
+      </div>
+    );
+  }
+  const [currentIndex, setCurrentIndex] = useState(
+    Math.floor(Math.random() * REVIEWS.length),
+  );
 
   useEffect(() => {
     const interval = setInterval(() => {

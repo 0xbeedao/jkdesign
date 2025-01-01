@@ -22,7 +22,6 @@ import * as $productions_sherlock_christmas_carol from "./routes/productions/she
 import * as $productions_shrew_sunvalley from "./routes/productions/shrew-sunvalley.tsx";
 import * as $productions_year_of_magical_thinking from "./routes/productions/year-of-magical-thinking.tsx";
 import * as $theater from "./routes/theater.tsx";
-import * as $Counter from "./islands/Counter.tsx";
 import * as $LoadAwareImage from "./islands/LoadAwareImage.tsx";
 import * as $ReviewCarousel from "./islands/ReviewCarousel.tsx";
 import type { Manifest } from "$fresh/server.ts";
@@ -57,7 +56,6 @@ const manifest = {
     "./routes/theater.tsx": $theater,
   },
   islands: {
-    "./islands/Counter.tsx": $Counter,
     "./islands/LoadAwareImage.tsx": $LoadAwareImage,
     "./islands/ReviewCarousel.tsx": $ReviewCarousel,
   },
