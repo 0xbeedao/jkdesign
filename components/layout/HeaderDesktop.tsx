@@ -32,7 +32,7 @@ export default function HeaderDesktop(): JSX.Element {
             </li>
             <li>
               <a>Shows</a>
-              <ul class="p-2">
+              <ul class="p-1">
                 <li>
                   <a href="/theater">Theater</a>
                 </li>
