@@ -41,7 +41,7 @@ export default function Layout(
         >
         </link>
       </Head>
-      <div class="layout w-full bg-gray-100 dark:bg-gray-900" id="full">
+      <div class="layout w-full bg-base dark:bg-base-300" id="full">
         <HeaderDesktop />
         <main
           id="main"

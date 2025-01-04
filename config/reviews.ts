@@ -17,9 +17,9 @@ the costumes.`,
   },
   {
     page: "/productions/sherlock-christmas-carol",
-    quote: `Scene designer Jeff Seats, lighting designer Jeff Forbes, and 
+    quote: `[other production crew] and 
     costume designer Jessica Bobillot don't let us down. They provide the 
-    ingenious trick panels and doors, fog effects, magical lighting and 
+    ingenious [...] and 
     imaginative costumes that we've come to expect in such holiday entertainments.`,
     attribution: "The Oregonian",
     attributionLink:
