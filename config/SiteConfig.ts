@@ -18,6 +18,7 @@ export const headerLinks: SimpleLink[] = [
   { href: "/bio", text: "Bio" },
   { href: "/fashion", text: "Fashion" },
   { href: "/theater", text: "Theater" },
+  { href: "/testimonials", text: "Testimonials" },
 ];
 
 export interface Social {
