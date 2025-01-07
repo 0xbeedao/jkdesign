@@ -20,6 +20,7 @@ import * as $productions_or from "./routes/productions/or.tsx";
 import * as $productions_play_about_my_father from "./routes/productions/play-about-my-father.tsx";
 import * as $productions_sherlock_christmas_carol from "./routes/productions/sherlock-christmas-carol.tsx";
 import * as $productions_shrew_sunvalley from "./routes/productions/shrew-sunvalley.tsx";
+import * as $productions_three_sisters from "./routes/productions/three-sisters.tsx";
 import * as $productions_year_of_magical_thinking from "./routes/productions/year-of-magical-thinking.tsx";
 import * as $testimonials from "./routes/testimonials.tsx";
 import * as $theater from "./routes/theater.tsx";
@@ -52,6 +53,7 @@ const manifest = {
     "./routes/productions/sherlock-christmas-carol.tsx":
       $productions_sherlock_christmas_carol,
     "./routes/productions/shrew-sunvalley.tsx": $productions_shrew_sunvalley,
+    "./routes/productions/three-sisters.tsx": $productions_three_sisters,
     "./routes/productions/year-of-magical-thinking.tsx":
       $productions_year_of_magical_thinking,
     "./routes/testimonials.tsx": $testimonials,

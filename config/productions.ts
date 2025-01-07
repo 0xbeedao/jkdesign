@@ -100,6 +100,7 @@ export const PRODUCTIONS: Production[] = [
     "theater": "Northwest Classical Theatre Collaborative",
     "location": "Portland OR",
     "date": "2018-01",
+    "link": "/productions/three-sisters",
   },
   {
     "show": "Ruddigore",
